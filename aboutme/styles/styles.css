@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(213, 251, 245);
+    text-align: center;
+    padding: 10px;
+}
+nav{
+    padding: 20px;
+    background-color: rgb(149, 239, 175);
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+a{
+    padding: 50px;
+    color:black;
+    
+  }
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(119, 133, 133);
+}
+h1{
+    padding: 15px;
+}
+img{
+    border: 4px solid rgb(149, 239, 173);
+    border-color: rgb(149, 239, 175);
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {border-color: rgb(138, 226, 70);}
+    10%  {border-color: brown;}
+    15%  {border-color: yellow;}
+    25%  {border-color: rgb(129, 217, 223);}
+    50%  {border-color: rgb(220, 173, 125);}
+    100% {border-color: rgb(119, 227, 119);}
+}
