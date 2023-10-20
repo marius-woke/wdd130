@@ -2,7 +2,8 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #396E94   ;
@@ -34,6 +35,7 @@ body {
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 img {
