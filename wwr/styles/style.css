@@ -180,7 +180,16 @@ footer p a:hover{
 footer.social img{
     padding-top: 15px;
 }
-
+.FAQ1{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    
+}
+.FAQ2{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
