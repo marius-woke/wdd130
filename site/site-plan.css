@@ -2,8 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #B2DDF7   ;
@@ -31,11 +30,11 @@ Fonts are separated by a & */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 960px;
+  max-width: 100% auto;
   margin: 0 auto;
-  padding: 4em;
+  padding: 0em;
   font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 img {
@@ -55,11 +54,120 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  color: var(--headline-color-on-color);
+  color:#6F6866;
   background-color: var(--paragraph-background-color);
+  width: 100%;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3em;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+}
+
+nav a {
+  padding: 10px;
+  min-width: 120px;
+  text-decoration: none;
+  color:aqua;
+  margin-right: 120px;
+}
+
+nav a:link, nav a:visited {
+  color: black;
+}
+
+.logo {
+  width: 80px;
+}
+.logo-right{
+  width: 80px;
+  border-radius: 100%;
+  float: right;
+}
+nav a:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+.teton-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teton-text, .teton-text1 {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.teton-img {
+  flex: 1;
+  max-width: 50%;
+  margin-left: 20px;
+  border: 10px solid azure;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+footer{
+  background-color:#F1C8DB;
+  color: black;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 70px;
+    margin-left: 10px;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -98,31 +206,26 @@ p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-  
-}
-nav a {
-  padding:1em;
+/* nav a {
+  padding: 10px;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
   color:aqua;
+  margin-right: 120px;
 }
+
 nav a:link, nav a:visited {
   color: black;
 }
+.logo{
+  width: 80px;
+}*/
+/*
 nav a:hover {
   color: white;
   background-color: skyblue;
 }
+*/   
 .sitemap {
   display: grid;
   justify-content: center;
